@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "graychoi's blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "bisheng start",
+    "deploy": "bisheng gh-pages",
+    "build": "bisheng build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrayChoi/blog.git"
+  },
+  "keywords": [
+    "blog",
+    "bisheng"
+  ],
+  "author": "GrayChoi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GrayChoi/blog/issues"
+  },
+  "homepage": "https://github.com/GrayChoi/blog#readme",
+  "dependencies": {
+    "bisheng": "^0.12.1",
+    "react": "^15.3.0",
+    "react-document-title": "^2.0.2",
+    "react-router": "^2.6.1"
+  }
+}
