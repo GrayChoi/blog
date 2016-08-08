@@ -57,11 +57,11 @@ const Demo = props => {
     return (
         <div>
             <Row>
-                <Col xs={24} sm={12} md={12} lg={8}><p className="z-depth-1 shadow-demo"></p></Col>
-                <Col xs={24} sm={12} md={12} lg={8}><p className="z-depth-2 shadow-demo"></p></Col>
-                <Col xs={24} sm={12} md={12} lg={8}><p className="z-depth-3 shadow-demo"></p></Col>
-                <Col xs={24} sm={12} md={12} lg={8}><p className="z-depth-4 shadow-demo"></p></Col>
-                <Col xs={24} sm={12} md={12} lg={8}><p className="z-depth-5 shadow-demo"></p></Col>
+                <Col xs={12} sm={12} md={12} lg={8}><p className="z-depth-1 shadow-demo"></p></Col>
+                <Col xs={12} sm={12} md={12} lg={8}><p className="z-depth-2 shadow-demo"></p></Col>
+                <Col xs={12} sm={12} md={12} lg={8}><p className="z-depth-3 shadow-demo"></p></Col>
+                <Col xs={12} sm={12} md={12} lg={8}><p className="z-depth-4 shadow-demo"></p></Col>
+                <Col xs={12} sm={12} md={12} lg={8}><p className="z-depth-5 shadow-demo"></p></Col>
             </Row>
         </div>
     );
