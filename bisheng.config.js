@@ -1,6 +1,6 @@
 module.exports = {
   lazyLoad: true,
-  root: '/blog/',
+  root: '/',
   plugins: ['bisheng-plugin-description'],
   pick: {
     posts(markdownData) {
