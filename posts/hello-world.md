@@ -11,8 +11,7 @@ The first article which is posted by GrayChoi!
 
 Hello world!
 
-```js
-(function () {
-  console.log('Hello world!');
-})();
+```jsx
+import { Button } from 'antd';
+ReactDOM.render(<Button>Click!</Button>, mountNode);
 ```

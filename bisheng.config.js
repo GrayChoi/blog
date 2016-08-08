@@ -1,7 +1,10 @@
 module.exports = {
   lazyLoad: true,
   root: '/',
-  plugins: ['bisheng-plugin-description'],
+  plugins: [
+    'bisheng-plugin-description',
+    'bisheng-plugin-react?lang=jsx'
+  ],
   pick: {
     posts(markdownData) {
       return {

@@ -25,7 +25,9 @@
   },
   "homepage": "https://github.com/GrayChoi/blog#readme",
   "dependencies": {
+    "antd": "^1.8.0",
     "bisheng": "^0.12.1",
+    "bisheng-plugin-react": "^0.2.0",
     "react": "^15.3.0",
     "react-document-title": "^2.0.2",
     "react-router": "^2.6.1"
