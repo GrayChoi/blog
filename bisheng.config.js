@@ -12,5 +12,11 @@ module.exports = {
         description: markdownData.description,
       };
     }
+  },
+  webpackConfig(config) {
+    config.babel.plugins.push(['antd'], {
+      style: true,
+    });
+    return config;
   }
 };
