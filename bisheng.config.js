@@ -14,9 +14,12 @@ module.exports = {
     }
   },
   webpackConfig(config) {
-    config.babel.plugins.push(['antd'], {
-      style: true,
-    });
+    config.babel.plugins.push([
+      require.resolve('babel-plugin-antd'),
+      {
+        style: true
+      }
+    ]);
     return config;
   }
 };
