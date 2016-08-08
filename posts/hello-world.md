@@ -13,5 +13,6 @@ Hello world!
 
 ```jsx
 import { Button } from 'antd';
+
 ReactDOM.render(<Button>Click!</Button>, mountNode);
 ```
