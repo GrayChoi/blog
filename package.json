@@ -6,9 +6,7 @@
   "scripts": {
     "start": "bisheng start",
     "pre-deploy": "mkdir -p _site && cp CNAME _site",
-    "pre-deploy-w": "if not exist _site mkdir _site && cp CNAME _site",
     "deploy": "npm run pre-deploy && bisheng gh-pages",
-    "deploy-w": "npm run pre-deploy-w && bisheng gh-pages",
     "build": "bisheng build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
