@@ -1,12 +1,12 @@
 ---
-title: Material Design Implementation
+title: Material Design Implementation of Shadow
 publishDate: 2016-08-08
 tags: 
   - material design
   - shadow
 ---
 
-How to Implement Shadows
+How to Implement Shadow
 
 ---
 
