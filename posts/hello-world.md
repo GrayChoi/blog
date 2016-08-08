@@ -16,9 +16,9 @@ import { Modal, Button } from 'antd';
 function hello() {
   const modal = Modal.success({
     title: 'Hello World',
-    content: 'Welcom to my blog!'
+    content: 'Welcom to my blog!',
+    okText: 'OK!'
   });
-  setTimeout(() => modal.destroy(), 1000);
 }
 ReactDOM.render(<Button type="primary" onClick={hello} style={{ marginBottom: '20px'}}>Click!</Button>, mountNode);
 ```
