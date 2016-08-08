@@ -16,7 +16,7 @@ git init
 git config user.name "Gray Choi"
 git config user.email "gray.choi.1988@gmail.com"
 
-git remote add upstream "https://$GH_TOKEN@github.com/GrayChoi/blog.git"
+git remote add upstream "https://${GH_TOKEN}@github.com/GrayChoi/blog.git"
 git fetch upstream
 git reset upstream/gh-pages
 
