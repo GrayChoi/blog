@@ -5,7 +5,7 @@ tags:
   - test
 ---
 
-The first article which is posted by GrayChoi.
+The first article which is posted by GrayChoi!
 
 ---
 
