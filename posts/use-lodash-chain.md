@@ -18,6 +18,9 @@ Function Chaining is a common pattern in functional programming. You can perform
 several actions continuously, and don't need to define a variable to save intermediate results
 of functions. This will reduce errors and improve the legibility of you code.
 
+
+### Using `_.chain` of lodash to implement chaining function pattern
+
 Let's see some examples of `_.chain` in lodash, you may understand why we need to use it as possible as
 we can.
 
