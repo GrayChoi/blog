@@ -19,7 +19,7 @@ export default (props) => {
   const { pageData, utils } = props;
   const { meta, description, content } = pageData;
   return (
-    <DocumentTitle title={`${meta.title} | BiSheng Theme One`}>
+    <DocumentTitle title={`${meta.title} | PURE RENDER`}>
       <Layout {...props}>
         <div className="hentry">
           <h1 className="entry-title">{meta.title}</h1>
