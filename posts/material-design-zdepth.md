@@ -1,12 +1,13 @@
 ---
-title: Material Design Implementation of Shadow
+title: Material Design Shadow
 publishDate: 2016-08-08
 tags: 
   - material design
   - shadow
+  - css
 ---
 
-How to Implement Shadow
+A CSS implementation for box-shadows to Material Deisign style guide
 
 ---
 
