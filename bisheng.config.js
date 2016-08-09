@@ -5,6 +5,7 @@ module.exports = {
     'bisheng-plugin-description',
     'bisheng-plugin-react?lang=jsx'
   ],
+  htmlTemplate: './site/theme/static/template.html',
   pick: {
     posts(markdownData) {
       return {
