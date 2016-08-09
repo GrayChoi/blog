@@ -26,7 +26,7 @@
   "homepage": "https://github.com/GrayChoi/blog#readme",
   "dependencies": {
     "antd": "^1.8.0",
-    "babel-plugin-antd": "^0.5.0",
+    "babel-plugin-antd": "^0.4.1",
     "bisheng": "^0.12.1",
     "bisheng-plugin-react": "^0.2.0",
     "react": "^15.3.0",
