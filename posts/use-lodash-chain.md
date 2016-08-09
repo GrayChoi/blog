@@ -1,6 +1,6 @@
 ---
 title: Chaining In LoDash
-publishDate: 2016-08-08
+publishDate: 2016-08-09
 tags: 
   - JavaScript
   - functional programming
