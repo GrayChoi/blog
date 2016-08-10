@@ -21,6 +21,7 @@ git fetch upstream
 git reset upstream/gh-pages
 
 echo "purerender.io" > CNAME
+mv ../sitemap.txt ./sitemap.txt
 
 touch .
 

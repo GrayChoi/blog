@@ -1,6 +1,6 @@
 module.exports = {
   home: '/',
-  sitename: 'PURE RENDER',
+  sitename: 'PURE RENDER | BLOG',
   // tagline: 'The one theme for bisheng',
   // navigation: [{
   //   title: 'BiSheng',
