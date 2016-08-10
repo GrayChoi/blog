@@ -91,7 +91,7 @@ Why this will cause a bug, before I anwser this question, we need to know
 one depth of object with each other,  it don't perform a deep comparison between
 two values.
 
-1. Bug: mutate value of deep property
+- Bug: mutate value of deep property
 
 ```js
 let p1 = {
@@ -115,7 +115,7 @@ In this case, when we change the value of property `address`, the child componen
 will not be re-rendered. This will cause a bug, to mutate state is not recommended
 by community.
 
-2. Bug: Don't mutate value, just return a new object
+- Bug: Don't mutate value, just return a new object
 
 ```js
 let p1 = {
