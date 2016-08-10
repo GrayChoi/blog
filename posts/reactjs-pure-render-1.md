@@ -1,9 +1,13 @@
 ---
-title: React.js: Problem of shallowCompare In Pure render
+title: Reactjs Pure Render (1)
 publishDate: 2016-08-10
 tags: 
   - reactjs
   - JavaScript
+---
+
+Problem of shallowCompare In Pure render
+
 ---
 
 ### What is Pure render ?
