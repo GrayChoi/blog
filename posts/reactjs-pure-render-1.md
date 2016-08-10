@@ -12,9 +12,9 @@ Problem of shallowCompare In Pure render
 
 ### What is Pure render ?
 
-*When the react component need to be re-rendered, it will be re-rendered.*
+*Only the react component need to be re-rendered, it will be re-rendered.*
 
-In some case, you just want re-render a parent component, because render method of react component is
+In some case, you just want re-render a parent component, but since the `render()` method of react component is executed
 recursive, the parent component will also re-render all child component of it. Although, when mounting the dom
 that React will diff the current virtual dom tree with the previous virtual dom tree, and only apply diffrent part of
 the dom tree to the real dom tree. Frequent Rendering of children component are also quite performance hungray.
@@ -29,9 +29,11 @@ with shallow equality checks.
 >`shallowCompare` performs a shallow equality check on the current `props` and `nextProps` objects as well 
 as the current `state` and `nextState` objects.It does this by iterating on the keys of the objects being 
 compared and returning true when the values of a key in each object are not strictly equal.  
-`shallowCompare` returns `true` if the shallow comparison for props or state fails and therefore 
+>
+>`shallowCompare` returns `true` if the shallow comparison for props or state fails and therefore 
 the component should update.  
-`shallowCompare` returns `false` if the shallow comparison for props and 
+>
+>`shallowCompare` returns `false` if the shallow comparison for props and 
 state both pass and therefore the component does not need to update.
 
 ### shallowCompare will cause problems
