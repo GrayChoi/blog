@@ -8,7 +8,7 @@ module.exports = {
   // }],
   // footer: 'Copyright and so on...',
   // hideBisheng: true,
-  github: 'https://github.com/GrayChoi',
+  github: 'https://github.com/GrayChoi/blog',
   routes: [{
     path: '/',
     component: './template/Archive',
