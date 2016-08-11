@@ -53,7 +53,7 @@ fllowing example:
 const AllFloatDemo = props => {
     return (
         <div className="container">
-            <h4>float left</h4>
+            <h4>all float left</h4>
             <div className="box" style={{float:'left'}}></div>
             <div className="box pink" style={{float:'left'}}></div>
         </div>
@@ -73,7 +73,7 @@ Let's see the example as following:
 const ClearFloatDemo = props => {
     return (
         <div className="container">
-            <h4>float left</h4>
+            <h4>clear float left</h4>
             <div className="box" style={{float:'left'}}></div>
             <div className="box pink" style={{float:'left', width: '100px', height: '100px'}}></div>
             <div className="box yellow" style={{clear:'left'}}></div>
