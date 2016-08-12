@@ -26,7 +26,7 @@ export default (props) => {
   const tags = getTags(props.picked.posts);
 
   return (
-    <DocumentTitle title="Tag Cloud | BiSheng Theme One">
+    <DocumentTitle title="Tag Cloud | PURE RENDER">
       <Layout {...props}>
         <h1 className="entry-title">Tags</h1>
         <div className="tagcloud">

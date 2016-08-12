@@ -4,7 +4,7 @@ import Layout from './Layout';
 
 export default (props) => {
   return (
-    <DocumentTitle title="Not Found | BiSheng Theme One">
+    <DocumentTitle title="Not Found | PURE RENDER">
       <Layout {...props}>
         <h1 className="entry-title">404 Not Found!</h1>
       </Layout>

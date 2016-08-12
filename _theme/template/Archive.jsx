@@ -43,7 +43,7 @@ export default (props) => {
     );
   })
   return (
-    <DocumentTitle title="PURE RENDER">
+    <DocumentTitle title="PURE RENDER | BLOG">
       <Layout {...props}>
         <h1 className="entry-title">Archive</h1>
         <div className="entry-list">
