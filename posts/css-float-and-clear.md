@@ -89,6 +89,12 @@ ReactDOM.render(<ClearFloatDemo />, mountNode);
       padding: 10px;
       margin-bottom: 10px;
   }
+  .demo-container:after {
+    content: " ";
+    display: block;
+    visibility: none;
+    clear: both;
+  }
   .box {
       background-color: #26a69a;
       height: 100px;
