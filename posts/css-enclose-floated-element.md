@@ -58,7 +58,7 @@ ReactDOM.render(<NotEnclosed />, mountNode);
 const OverflowHidden = props => {
     return (
         <div className="demo-container-overflow-hidden">
-            <h4>Parent element doesn't enclose the children of it.</h4>
+            <h4>Overflow:Hidden</h4>
             <div className="box" style={{float: 'left'}}></div>
             <div className="box pink" style={{float: 'left'}}></div>
         </div>
@@ -80,7 +80,7 @@ ReactDOM.render(<OverflowHidden />, mountNode);
 const FloatParent = props => {
     return (
         <div className="demo-container-float">
-            <h4>Parent element doesn't enclose the children of it.</h4>
+            <h4>Floating Parent./h4>
             <div className="box" style={{float: 'left'}}></div>
             <div className="box pink" style={{float: 'left'}}></div>
         </div>
@@ -111,7 +111,7 @@ ReactDOM.render(<FloatParent />, mountNode);
 const Clearfix = props => {
     return (
         <div className="demo-container">
-            <h4>Parent element doesn't enclose the children of it.</h4>
+            <h4>Magical :after is instead of a concrete non-floated clearing element.</h4>
             <div className="box" style={{float: 'left'}}></div>
             <div className="box pink" style={{float: 'left'}}></div>
         </div>
