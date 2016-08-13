@@ -4,4 +4,5 @@ http://purerender.io/posts/material-design-shadow
 http://purerender.io/posts/hello-world
 http://purerender.io/posts/reactjs-pure-render-1
 http://purerender.io/posts/css-float-and-clear
+http://purerender.io/posts/css-enclose-floated-element
 http://purerender.io/tags
