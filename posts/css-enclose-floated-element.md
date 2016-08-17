@@ -16,15 +16,14 @@ the height of it will be the total height of the children’s. So when parent el
 children of it, the height of it is not always desirable. Typically, we have three ways to force
 elements to enclose their children.
 
-```html
+
+```
 <div class="demo-container-not-enclosed">
     <h4>Parent element doesn't enclose the children of it.</h4>
     <div class="box"></div>
     <div class="box pink"></div>
 </div>
-```
 
-```css
 .demo-container-not-enclosed {
     border: 1px #333 solid;
     padding: 10px;
