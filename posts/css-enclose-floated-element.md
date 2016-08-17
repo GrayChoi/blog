@@ -17,10 +17,10 @@ children of it, the height of it is not always desirable. Typically, we have thr
 elements to enclose their children.
 
 ```html
-<div className="demo-container-not-enclosed">
+<div class="demo-container-not-enclosed">
     <h4>Parent element doesn't enclose the children of it.</h4>
-    <div className="box"></div>
-    <div className="box pink"></div>
+    <div class="box"></div>
+    <div class="box pink"></div>
 </div>
 ```
 
