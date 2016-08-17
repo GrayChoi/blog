@@ -37,7 +37,7 @@ const NotEnclosed = props => {
             <h4>Parent element doesn't enclose the children of it.</h4>
             <div className="box" style={{float: 'left'}}></div>
             <div className="box pink" style={{float: 'left'}}></div>
-            <div style={{clear: 'both'}}/>
+            <div style={{clear: 'both'}}></div>
         </div>
     );
 }
@@ -85,7 +85,7 @@ const FloatParent = props => {
             <h4>Floating Parent./h4>
             <div className="box" style={{float: 'left'}}></div>
             <div className="box pink" style={{float: 'left'}}></div>
-            <div style={{clear: 'both'}}/>
+            <div style={{clear: 'both'}}></div>
         </div>
     );
 }
