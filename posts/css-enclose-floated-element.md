@@ -16,20 +16,6 @@ the height of it will be the total height of the children’s. So when parent el
 children of it, the height of it is not always desirable. Typically, we have three ways to force
 elements to enclose their children.
 
-```html
-<div className="demo-container-not-enclosed">
-    <h4>Parent element doesn't enclose the children of it.</h4>
-    <div className="box"></div>
-    <div className="box pink"></div>
-</div>
-```
-```css
-.demo-container-not-enclosed {
-    border: 1px #333 solid;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-```
 ```jsx
 const NotEnclosed = props => {
     return (
@@ -44,17 +30,24 @@ const NotEnclosed = props => {
 ReactDOM.render(<NotEnclosed />, mountNode);
 ```
 
-
-#### Add `overflow: hidden` to the Parent Element
+```html
+<div className="demo-container-not-enclosed">
+    <h4>Parent element doesn't enclose the children of it.</h4>
+    <div className="box"></div>
+    <div className="box pink"></div>
+</div>
+```
 
 ```css
-.demo-container-overflow-hidden {
+.demo-container-not-enclosed {
     border: 1px #333 solid;
     padding: 10px;
     margin-bottom: 10px;
-    overflow: hidden;
 }
 ```
+
+
+#### Add `overflow: hidden` to the Parent Element
 
 ```jsx
 const OverflowHidden = props => {
@@ -68,16 +61,18 @@ const OverflowHidden = props => {
 }
 ReactDOM.render(<OverflowHidden />, mountNode);
 ```
-#### Float the Parent, too.
 
 ```css
-.demo-container-float {
+.demo-container-overflow-hidden {
     border: 1px #333 solid;
     padding: 10px;
     margin-bottom: 10px;
-    float: left;
+    overflow: hidden;
 }
 ```
+
+#### Float the Parent, too.
+
 ```jsx
 const FloatParent = props => {
     return (
@@ -92,7 +87,30 @@ const FloatParent = props => {
 ReactDOM.render(<FloatParent />, mountNode);
 ```
 
+```css
+.demo-container-float {
+    border: 1px #333 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+```
+
+
 #### Add a Non-Floated Clearing Element.
+
+```jsx
+const Clearfix = props => {
+    return (
+        <div className="demo-container">
+            <h4>Magical :after is instead of a concrete non-floated clearing element.</h4>
+            <div className="box" style={{float: 'left'}}></div>
+            <div className="box pink" style={{float: 'left'}}></div>
+        </div>
+    );
+}
+ReactDOM.render(<Clearfix />, mountNode);
+```
 
 ```css
 .demo-container {
@@ -108,19 +126,6 @@ ReactDOM.render(<FloatParent />, mountNode);
     clear: both;
 }
 ```
-```jsx
-const Clearfix = props => {
-    return (
-        <div className="demo-container">
-            <h4>Magical :after is instead of a concrete non-floated clearing element.</h4>
-            <div className="box" style={{float: 'left'}}></div>
-            <div className="box pink" style={{float: 'left'}}></div>
-        </div>
-    );
-}
-ReactDOM.render(<Clearfix />, mountNode);
-```
-
 
 <style>
   .demo-container-not-enclosed {
