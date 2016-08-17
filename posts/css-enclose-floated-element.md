@@ -65,12 +65,29 @@ const OverflowHidden = props => {
 ReactDOM.render(<OverflowHidden />, mountNode);
 ```
 
+#### Float the Parent, too.
+
+```jsx
+const FloatParent = props => {
+    return (
+        <div>
+            <div className="demo-container-float">
+                <h4>Floating Parent./h4>
+                <div className="box" style={{float: 'left'}}></div>
+                <div className="box pink" style={{float: 'left'}}></div>
+            </div>
+            <div style={{clear: 'both'}}></div>
+        </div>
+    );
+}
+ReactDOM.render(<FloatParent />, mountNode);
+```
 ```css
-.demo-container-overflow-hidden {
+.demo-container-float {
     border: 1px #333 solid;
     padding: 10px;
     margin-bottom: 10px;
-    overflow: hidden;
+    float: left;
 }
 ```
 
