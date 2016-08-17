@@ -23,6 +23,7 @@ elements to enclose their children.
     <div className="box pink"></div>
 </div>
 ```
+
 ```css
 .demo-container-not-enclosed {
     border: 1px #333 solid;
@@ -30,6 +31,7 @@ elements to enclose their children.
     margin-bottom: 10px;
 }
 ```
+
 ```jsx
 const NotEnclosed = props => {
     return (
@@ -43,7 +45,6 @@ const NotEnclosed = props => {
 }
 ReactDOM.render(<NotEnclosed />, mountNode);
 ```
-
 
 #### Add `overflow: hidden` to the Parent Element
 
@@ -68,6 +69,7 @@ const OverflowHidden = props => {
 }
 ReactDOM.render(<OverflowHidden />, mountNode);
 ```
+
 #### Float the Parent, too.
 
 ```css
@@ -78,6 +80,7 @@ ReactDOM.render(<OverflowHidden />, mountNode);
     float: left;
 }
 ```
+
 ```jsx
 const FloatParent = props => {
     return (
@@ -108,6 +111,7 @@ ReactDOM.render(<FloatParent />, mountNode);
     clear: both;
 }
 ```
+
 ```jsx
 const Clearfix = props => {
     return (
@@ -120,7 +124,6 @@ const Clearfix = props => {
 }
 ReactDOM.render(<Clearfix />, mountNode);
 ```
-
 
 <style>
   .demo-container-not-enclosed {
