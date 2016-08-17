@@ -15,3 +15,83 @@ doesn't see it and so doesn't enclose it. If you don't specify a fix height to a
 the height of it will be the total height of the children’s. So when parent element doesn't see the
 children of it, the height of it is not always desirable. Typically, we have three ways to force
 elements to enclose their children.
+
+
+
+```jsx
+const NotEnclosed = props => {
+    return (
+        <div>
+            <div className="demo-container-not-enclosed">
+                <h4>Parent element doesn't enclose the children of it.</h4>
+                <div className="box" style={{float: 'left'}}></div>
+                <div className="box pink" style={{float: 'left'}}></div>
+            </div>
+            <div style={{clear: 'both'}}></div>
+        </div>
+    );
+}
+ReactDOM.render(<NotEnclosed />, mountNode);
+```
+
+```html
+<div className="demo-container-not-enclosed">
+    <h4>Parent element doesn't enclose the children of it.</h4>
+    <div className="box" style={{float: 'left'}}></div>
+    <div className="box pink" style={{float: 'left'}}></div>
+</div>
+```
+
+```css
+.demo-container-not-enclosed {
+    border: 1px #333 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+```
+
+<style>
+  .demo-container-not-enclosed {
+      border: 1px #333 solid;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+  .demo-container-overflow-hidden {
+    border: 1px #333 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .demo-container-float {
+    border: 1px #333 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .demo-container {
+      border: 1px #333 solid;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+  .demo-container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+  .box {
+      background-color: #26a69a;
+      height: 100px;
+      width: 100px;
+      margin-bottom: 10px;
+  }
+  .pink {
+      width: 150px;
+      height: 150px;
+      background-color: #e91e63;
+  }
+  .yellow {
+      background-color: #ffeb3b;
+  }
+</style>
