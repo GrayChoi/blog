@@ -50,6 +50,30 @@ ReactDOM.render(<NotEnclosed />, mountNode);
 }
 ```
 
+#### Add `overflow: hidden` to the Parent Element
+
+```jsx
+const OverflowHidden = props => {
+    return (
+        <div className="demo-container-overflow-hidden">
+            <h4>Overflow:Hidden</h4>
+            <div className="box" style={{float: 'left'}}></div>
+            <div className="box pink" style={{float: 'left'}}></div>
+        </div>
+    );
+}
+ReactDOM.render(<OverflowHidden />, mountNode);
+```
+
+```css
+.demo-container-overflow-hidden {
+    border: 1px #333 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+```
+
 <style>
   .demo-container-not-enclosed {
       border: 1px #333 solid;
