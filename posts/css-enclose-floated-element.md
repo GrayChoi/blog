@@ -72,7 +72,7 @@ const FloatParent = props => {
     return (
         <div>
             <div className="demo-container-float">
-                <h4>Floating Parent./h4>
+                <h4>Floating Parent.</h4>
                 <div className="box" style={{float: 'left'}}></div>
                 <div className="box pink" style={{float: 'left'}}></div>
             </div>
@@ -88,6 +88,45 @@ ReactDOM.render(<FloatParent />, mountNode);
     padding: 10px;
     margin-bottom: 10px;
     float: left;
+}
+```
+
+#### Add a Non-Floated Clearing Element.
+
+```jsx
+const Clearfix = props => {
+    return (
+        <div className="demo-container">
+            <h4>Magical :after is instead of a concrete non-floated clearing element.</h4>
+            <div className="box" style={{float: 'left'}}></div>
+            <div className="box pink" style={{float: 'left'}}></div>
+        </div>
+    );
+}
+ReactDOM.render(<Clearfix />, mountNode);
+```
+
+```css
+.demo-container {
+    border: 1px #333 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.demo-container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+```
+
+```css
+.demo-container-overflow-hidden {
+    border: 1px #333 solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 ```
 
