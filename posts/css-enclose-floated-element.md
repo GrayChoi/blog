@@ -29,15 +29,6 @@ const NotEnclosed = props => {
 }
 ReactDOM.render(<NotEnclosed />, mountNode);
 ```
-
-```html
-<div className="demo-container-not-enclosed">
-    <h4>Parent element doesn't enclose the children of it.</h4>
-    <div className="box"></div>
-    <div className="box pink"></div>
-</div>
-```
-
 ```css
 .demo-container-not-enclosed {
     border: 1px #333 solid;
