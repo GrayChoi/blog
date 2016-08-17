@@ -37,12 +37,13 @@ const NotEnclosed = props => {
             <h4>Parent element doesn't enclose the children of it.</h4>
             <div className="box" style={{float: 'left'}}></div>
             <div className="box pink" style={{float: 'left'}}></div>
+            <div style="clear: both"/>
         </div>
     );
 }
 ReactDOM.render(<NotEnclosed />, mountNode);
 ```
-<div style="clear: both"/>
+
 
 #### Add `overflow: hidden` to the Parent Element
 
@@ -54,6 +55,7 @@ ReactDOM.render(<NotEnclosed />, mountNode);
     overflow: hidden;
 }
 ```
+
 ```jsx
 const OverflowHidden = props => {
     return (
@@ -83,13 +85,12 @@ const FloatParent = props => {
             <h4>Floating Parent./h4>
             <div className="box" style={{float: 'left'}}></div>
             <div className="box pink" style={{float: 'left'}}></div>
+            <div style="clear: both"/>
         </div>
     );
 }
 ReactDOM.render(<FloatParent />, mountNode);
 ```
-
-<div style="clear: both"/>
 
 #### Add a Non-Floated Clearing Element.
 
