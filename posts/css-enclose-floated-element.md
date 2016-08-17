@@ -44,7 +44,7 @@ ReactDOM.render(<NotEnclosed />, mountNode);
 ```
 <div style="clear: both"/>
 
-- Add `overflow: hidden` to the Parent Element
+#### Add `overflow: hidden` to the Parent Element
 
 ```css
 .demo-container-overflow-hidden {
@@ -66,7 +66,7 @@ const OverflowHidden = props => {
 }
 ReactDOM.render(<OverflowHidden />, mountNode);
 ```
-- Float the Parent, too.
+#### Float the Parent, too.
 
 ```css
 .demo-container-float {
@@ -91,7 +91,7 @@ ReactDOM.render(<FloatParent />, mountNode);
 
 <div style="clear: both"/>
 
-- Add a Non-Floated Clearing Element.
+#### Add a Non-Floated Clearing Element.
 
 ```css
 .demo-container {
